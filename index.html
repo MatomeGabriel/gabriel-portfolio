@@ -7,6 +7,13 @@
     <title>Gabriel's Portfolio</title>
   </head>
   <body>
+    <div class="popUp">
+      <h2 class="pop-title">Webside Under Construction</h2>
+      <p class="pop-text">Content and features won't be accurate.</p>
+      <button class="pop-btn">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+    </div>
     <header id="home" class="header">
       <nav class="nav">
         <ul class="nav-list">
@@ -18,7 +25,7 @@
           </li>
           <li class="nav-item">
             <a href="#home" class="tooltip">
-              <ion-icon class="icon" name="clipboard-outline"></ion-icon>
+              <ion-icon class="icon" name="albums-outline"></ion-icon>
               <span class="tooltip-text">View projects</span>
             </a>
           </li>
@@ -74,15 +81,19 @@
       <div class="content-area">
         <h1 class="primary-heading">
           <span class="heading-intro">Hi! 👋</span>
-          I am Tanaka,
+          I am Gabriel,
           <span class="primary-heading--color">
-            a Product Designer with over 8 years of designing interface.
+            an Electronic Technician and Full-stack web developer in training
           </span>
         </h1>
 
         <p class="subheading">
-          Currently freelancing for App & Web Design Project . Invite me to join
-          your design team -> tanaka@mail.com
+          Currently doing full-stack web app development training at zaio.io. If
+          you have any questions, please feel free to contact me
+          <a class="link" href="mailto:montjagabriel@gmail.com"
+            >montjagabriel@gmail.com</a
+          >
+          .
         </p>
       </div>
       <div class="image-area">
@@ -100,58 +111,116 @@
           <div class="col-1">
             <h3 class="heading-tertiary">About</h3>
             <p class="paragraph">
-              At the end of 2022, I quit my job as a software engineer to go
-              fulltime into building and scaling my own SaaS businesses. In the
-              past, I pursued a double degree in computer science and business,
-              interned at big tech companies in Silicon Valley, and competed in
-              over 21 hackathons for fun. I also had the pleasure of being a
-              part of the first ever in-person cohort of buildspace called
-              buildspace sf1.
+              I currently work at Mernok Elektronik, where we design,
+              manufacture, and supply Proximity Detection Systems (PDS), vehicle
+              management systems, and peripherals. As an electronics technician,
+              I have hands-on experience in board-level testing, product
+              assessments, and electronic repairs, ensuring high-quality and
+              reliable systems.
+            </p>
+            <p class="paragraph">
+              Recently, I decided to expand my expertise into full-stack web
+              development. I’m currently training at Zaio Bootcamp, learning how
+              to build dynamic web applications and gaining skills in both
+              frontend and backend development. My goal is to merge my
+              electronics background with software development to create
+              innovative tech solutions.
             </p>
           </div>
 
           <div class="col-2">
-            <p class="paragraph">
-              <a href="tel:0764530576">Contact</a>
-            </p>
-
-            <p class="paragraph"><strong>Name: Gabriel Montja</strong></p>
-            <p class="paragraph">
-              <strong>Profile: Full Stack Web Developer</strong>
-            </p>
-            <p class="paragraph">
-              <strong>Email: montjagabriel@gmail.com</strong>
-            </p>
-            <p class="paragraph">
-              <ion-icon class="icon" name="call-outline"></ion-icon>
-              <span><strong>0764530576</strong></span>
-            </p>
-            <div class="skills-box">
-              <p class="paragraph">Skills:</p>
-              <div class="skills">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">GIT</span>
-                <span class="skill">Javascript</span>
-                <span class="skill">Firebase</span>
-                <span class="skill">OPP</span>
-                <span class="skill">ReactJS</span>
-                <span class="skill">Redux</span>
-                <span class="skill">React Router</span>
-                <span class="skill">NodeJS</span>
-                <span class="skill">MongoDB</span>
-                <span class="skill">Express</span>
+            <div class="card-container">
+              <div class="card">
+                <div class="front-face">
+                  <header class="card-header">
+                    <div class="card-img-container">
+                      <img
+                        class="card-img"
+                        src="https://cdn.pixabay.com/photo/2019/06/17/19/48/source-4280758_1280.jpg"
+                        alt="orgramming" />
+                    </div>
+                  </header>
+                  <div class="card-body">
+                    <div class="card-profile-container">
+                      <img
+                        class="card-profile-img"
+                        src="https://images.generated.photos/3bBsVrmuCOotbIxVwmoTxeaICW_xicAiYUkM5e8-DI4/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTUyOTcyLmpwZw.jpg"
+                        alt="" />
+                    </div>
+                    <h4 class="card-heading">Gabriel Montja</h4>
+                    <p class="card-text">
+                      Full-Stack Web Developer in Training | Passionate About
+                      Tech & Problem-Solving
+                    </p>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="skills-box">
+                      <p class="paragraph">Skills:</p>
+                      <div class="skills">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">GIT</span>
+                        <span class="skill">Javascript</span>
+                        <span class="skill">Firebase</span>
+                        <span class="skill">OPP</span>
+                        <span class="skill">ReactJS</span>
+                        <span class="skill">Redux</span>
+                        <span class="skill">React Router</span>
+                        <span class="skill">NodeJS</span>
+                        <span class="skill">MongoDB</span>
+                        <span class="skill">Express</span>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+                <div class="back-face">
+                  <div class="card-body">
+                    <h3 class="card-heading">Let's Connect</h3>
+                    <p class="card-text card-text--large">
+                      I am passionate about building modern and functional apps
+                      following best parctices and modern technologies, let's
+                      connect and work together
+                    </p>
+                    <ul class="card-links">
+                      <li class="card-link-item">
+                        <a href="" class="card-link">
+                          <ion-icon
+                            class="card-link-icon"
+                            name="call-outline"></ion-icon>
+                          <span class="card-link-text">Call</span>
+                        </a>
+                      </li>
+                      <li class="card-link-item">
+                        <a href="" class="card-link">
+                          <ion-icon
+                            class="card-link-icon"
+                            name="mail-outline"></ion-icon>
+                          <span class="card-link-text">Email </span>
+                        </a>
+                      </li>
+                      <li class="card-link-item">
+                        <a href="" class="card-link">
+                          <ion-icon
+                            class="card-link-icon"
+                            name="logo-linkedin"></ion-icon>
+                          <span class="card-link-text">Linkedin</span>
+                        </a>
+                      </li>
+                      <li class="card-link-item">
+                        <a href="" class="card-link">
+                          <ion-icon
+                            class="card-link-icon"
+                            name="logo-github"></ion-icon>
+                          <span class="card-link-text">Github</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <ul class="skill-list">
-          <li class="skill-item">
-            <span>IMG/SVG</span>
-            <span>JavaScript</span>
-          </li>
-        </ul>
       </section>
 
       <section class="skills-section">

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -35,19 +41,62 @@ html {
   font-size: 62.5%;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
 body {
   font-family: "Rubik", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
 
+.popUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 10vh; */
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 9999;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.4rem;
+}
+
+.dark .popUp {
+  background-color: var(--dark-grey-500);
+  color: #030712;
+}
+.pop-title {
+  font-size: 3.2rem;
+}
+.pop-text {
+  font-size: 1.8rem;
+}
+
+.pop-btn {
+  border: none;
+  padding: 1.2rem;
+  background-color: var(--dark-grey-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transition: all 0.3s;
+}
+.pop-btn:hover {
+  background-color: var(--dark-grey-700);
+}
 .container {
   max-width: 109rem;
   margin: 0 auto;
+}
+
+.pop-btn:active {
+  background-color: var(--dark-grey-500);
 }
 
 .container--flex {
@@ -108,6 +157,10 @@ body.dark {
   line-height: 1.8;
   color: var(--grey-600);
   font-weight: 400;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2.4rem;
 }
 
 .dark .paragraph {
@@ -563,4 +616,129 @@ body.dark {
   font-size: 1.4rem;
   line-height: 1.6;
   color: var(--grey-600);
+}
+
+.card {
+  width: 40rem;
+  height: 52rem;
+  position: relative;
+  transition: all 0.5s ease-in;
+  transform-style: preserve-3d;
+}
+
+.front-face {
+  font-size: 16px;
+  /* z-index: 2; */
+  backface-visibility: hidden;
+}
+
+.back-face {
+  font-size: 16px;
+  /* z-index: 1; */
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: absolute;
+  flex-direction: column;
+  border-radius: 2.4rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+  transform: rotateY(-180deg);
+}
+
+.card-container {
+  perspective: 150rem;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 10rem;
+  /* overflow: hidden; */
+}
+.card-img {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 2.4rem 2.4rem 0 0;
+}
+
+.card-profile-container {
+  width: 100px;
+  height: 100px;
+
+  margin-top: -7.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.card-profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 2.4rem;
+}
+
+.card-heading {
+  font-size: 2.4rem;
+  color: var(--grey-800);
+  margin-bottom: 1.2rem;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--dark-grey-200);
+}
+
+.card-footer {
+  padding: 0 2.4rem 2.4rem 2.4rem;
+}
+
+.card-body .paragraph {
+  margin-bottom: 1.2rem;
+}
+
+.card-text--large {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-top: 1.6rem;
+}
+
+.card-links {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.card-link-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.card-link-icon {
+  font-size: 2.4rem;
+}
+
+.card-link {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
 }

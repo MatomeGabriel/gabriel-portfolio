@@ -2,6 +2,7 @@ const $toggleButton = document.querySelector("#toggle");
 const $body = document.querySelector("body");
 const $skillNodeList = document.querySelectorAll(".skill");
 const $navElement = document.querySelector(".nav");
+const $popBtn = document.querySelector(".pop-btn");
 
 $toggleButton.addEventListener("click", () => {
   handleToggleModes();
@@ -46,3 +47,9 @@ const colors = [
 // setTimeout(() => {
 //   $navElement.style.borderColor = "red";
 // });
+
+// Event Handlers
+
+$popBtn.addEventListener("click", () => {
+  document.querySelector(".popUp").style.display = "none";
+});
